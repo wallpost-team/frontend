@@ -51,6 +51,7 @@ module.exports = {
         800: "#0c635c",
         900: "#0f524c",
       },
+      vk: "#0077ff",
     },
   },
   plugins: [],

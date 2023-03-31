@@ -1,0 +1,10 @@
+@tailwind utilities;
+
+@layer utilities {
+    .container-md {
+        @apply w-full 2xl:max-w-xl xl:max-w-lg lg:max-w-md md:max-w-sm;
+    }
+    .container-sm {
+        @apply w-full 2xl:max-w-lg xl:max-w-md lg:max-w-sm;
+    }
+}

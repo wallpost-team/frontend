@@ -1,10 +1,10 @@
 export const getDiscordProfile = async () => {
-  const { data: discordProfile, error } = await useFetch("/api/discord/user", {
-    credentials: "include",
-  });
-  if (error.value) {
-    console.error(error.value);
-  } else {
-    console.log(discordProfile.value);
+  try {
+    const discordProfile = await $fetch("/api/discord/user", {
+      credentials: "include",
+    });
+    return discordProfile;
+  } catch (err) {
+    console.log(err);
   }
 };

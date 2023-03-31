@@ -1,1 +1,1 @@
-export { getDiscordProfile } from "./api";
+export { getDiscordProfile, DiscordApi } from "./api";
